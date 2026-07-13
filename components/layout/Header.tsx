@@ -5,9 +5,15 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "@/data/content";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+  const pathname = usePathname();
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-slate-100 bg-white/95 backdrop-blur">
@@ -38,7 +44,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className={`text-sm font-medium transition-colors hover:text-blue-600 ${link.label === "Home"
+              className={`text-sm font-medium transition-colors hover:text-blue-600 ${isActive(link.href)
                 ? "text-blue-600 underline decoration-2 underline-offset-8"
                 : "text-slate-700"
                 }`}
@@ -85,7 +91,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsMenuOpen(false)}
-                className={`rounded-md px-3 py-2 text-sm font-medium ${link.label === "Home"
+                className={`rounded-md px-3 py-2 text-sm font-medium ${isActive(link.href)
                   ? "bg-blue-50 text-blue-600"
                   : "text-slate-700 hover:bg-slate-50"
                   }`}
