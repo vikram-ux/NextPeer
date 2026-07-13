@@ -36,3 +36,31 @@ export interface FooterLinkGroup {
   title: string;
   links: NavLink[];
 }
+
+
+export interface ProgramCategory {
+  slug: string;
+  label: string;
+  icon: LucideIcon;
+}
+
+export interface ProgramTrustPoint {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+}
+
+export interface Program {
+  slug: string;
+  title: string;
+  subtitle: string;
+  category: string;
+  badge?: "Bestseller" | "Popular" | "New";
+  gradient: string;
+  icon: LucideIcon;
+  rating: number;
+  reviewCount: number;
+  level: "Beginner" | "Beginner to Advanced" | "Intermediate";
+  duration: string;
+  price: number;
+}
