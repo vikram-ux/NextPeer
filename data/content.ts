@@ -22,10 +22,8 @@ import type {
 
 export const NAV_LINKS: NavLink[] = [
   { label: "Home", href: "/" },
-  { label: "Courses", href: "/courses" },
+  { label: "Programs", href: "/programs" },
   { label: "Internships", href: "/internships" },
-  { label: "Mentors", href: "/mentors" },
-  { label: "Success Stories", href: "/success-stories" },
   { label: "Blog", href: "/blog" },
   { label: "About Us", href: "/about" },
   { label: "Contact", href: "/contact" },
@@ -122,7 +120,7 @@ export const FOOTER_LINK_GROUPS: FooterLinkGroup[] = [
   {
     title: "Quick Links",
     links: [
-      { label: "Courses", href: "/courses" },
+      { label: "Programs", href: "/programs" },
       { label: "Internships", href: "/internships" },
       { label: "Mentors", href: "/mentors" },
       { label: "Success Stories", href: "/success-stories" },
