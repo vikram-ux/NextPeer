@@ -64,3 +64,30 @@ export interface Program {
   duration: string;
   price: number;
 }
+
+export interface DifferentiatorCard {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+}
+
+export interface CoreValue {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+}
+
+export interface AudienceItem {
+  icon: LucideIcon;
+  label: string;
+}
+
+export interface ProgramAreaItem {
+  icon: LucideIcon;
+  label: string;
+}
+
+export interface CTAPill {
+  icon: LucideIcon;
+  label: string;
+}
