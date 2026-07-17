@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Mail, Phone } from "lucide-react";
 import { FaInstagram, FaLinkedinIn, FaYoutube, FaXTwitter } from "react-icons/fa6";
 import { FOOTER_LINK_GROUPS } from "@/data/content";
+import Image from "next/image";
 
 const SOCIALS = [
   { icon: FaInstagram, href: "https://instagram.com", label: "Instagram" },
@@ -18,9 +19,14 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-600 text-base font-bold text-white">
-                NP
-              </div>
+              <Image
+                src="/logo.png"
+                alt="NextPeer Logo"
+                width={160}
+                height={44}
+                className="h-10 w-auto object-contain"
+                priority
+              />
               <p className="text-lg font-bold text-white">
                 Next<span className="text-blue-400">Peer</span>
               </p>
@@ -73,10 +79,10 @@ export default function Footer() {
                 <Mail size={14} />
                 support@nextpeer.in
               </a>
-              <a href="tel:+919876543210" className="flex items-center gap-2 hover:text-blue-400">
+              {/* <a href="tel:+919876543210" className="flex items-center gap-2 hover:text-blue-400">
                 <Phone size={14} />
                 +91 98765 43210
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

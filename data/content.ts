@@ -23,10 +23,10 @@ import type {
 export const NAV_LINKS: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "Programs", href: "/programs" },
-  { label: "Internships", href: "/internships" },
+  // { label: "Internships", href: "/internships" },
   { label: "Blog", href: "/blog" },
   { label: "About Us", href: "/about" },
-  { label: "Contact", href: "/contact" },
+  // { label: "Contact", href: "/contact" },
 ];
 
 export const HERO_FLOATING_CARDS: FloatingCard[] = [
@@ -121,9 +121,9 @@ export const FOOTER_LINK_GROUPS: FooterLinkGroup[] = [
     title: "Quick Links",
     links: [
       { label: "Programs", href: "/programs" },
-      { label: "Internships", href: "/internships" },
-      { label: "Mentors", href: "/mentors" },
-      { label: "Success Stories", href: "/success-stories" },
+      // { label: "Internships", href: "/internships" },
+      // { label: "Mentors", href: "/mentors" },
+      // { label: "Success Stories", href: "/success-stories" },
       { label: "Blog", href: "/blog" },
     ],
   },
@@ -132,7 +132,7 @@ export const FOOTER_LINK_GROUPS: FooterLinkGroup[] = [
     links: [
       { label: "About Us", href: "/about" },
       { label: "Careers", href: "/careers" },
-      { label: "Contact Us", href: "/contact" },
+      // { label: "Contact Us", href: "/contact" },
       { label: "Become a Mentor", href: "/become-a-mentor" },
       { label: "Privacy Policy", href: "/privacy-policy" },
     ],
