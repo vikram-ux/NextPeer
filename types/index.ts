@@ -91,3 +91,39 @@ export interface CTAPill {
   icon: LucideIcon;
   label: string;
 }
+export interface BlogCategory {
+  slug: string;
+  label: string;
+  icon: LucideIcon;
+}
+
+export interface BlogTag {
+  label: string;
+}
+
+export interface BlogPost {
+  slug: string;
+  number: number;
+  title: string;
+  excerpt: string;
+  gradient: string;
+  icon: LucideIcon;
+  readTime: string;
+}
+
+export interface FeaturedPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  tags: string[];
+  readTime: string;
+}
+
+export interface TrendingTopic {
+  label: string;
+}
+
+export interface FreeResource {
+  icon: LucideIcon;
+  label: string;
+}

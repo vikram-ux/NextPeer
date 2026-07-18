@@ -32,7 +32,9 @@ export default function Hero() {
               <ArrowRight size={16} />
             </Link>
             <Link
-              href="/book-session"
+              href="https://tally.so/r/yPRK1W"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition-colors hover:border-blue-600 hover:text-blue-600"
             >
               <Calendar size={16} />
